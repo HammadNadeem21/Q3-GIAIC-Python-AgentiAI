@@ -3,7 +3,7 @@
 
 import random
 
-DONE_LIKELIHOOD = 0.5
+DONE_LIKELIHOOD = 0.3
 
 def done():
     if random.random() < DONE_LIKELIHOOD:
@@ -12,7 +12,16 @@ def done():
 
 def chaotic_counting():
     for i in range(11):
+        if done():
+            return
         print(i)
 
 
-chaotic_counting()
+def main():
+    print("I'm going to count until 10 or until I feel like stopping, whichever comes first.")
+    chaotic_counting()
+    print("I am done")
+
+
+if __name__ == '__main__':
+    main()
