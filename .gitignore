@@ -1,0 +1,22 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment files
+.env
+**/.env
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks (if any)
+.ipynb_checkpoints/
+
+# Agent-specific ignores
+Ai-Agents/Openai-Agents-SDK/**/__pycache__/
+Ai-Agents/Openai-Agents-SDK/**/.env
