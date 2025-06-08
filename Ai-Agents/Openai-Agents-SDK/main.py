@@ -21,7 +21,8 @@ model = OpenAIChatCompletionsModel(
 
 greeting_agent = Agent(
     name="Greeting Agent",
-    instructions="You are a greeting agent, your task is to say Waalaiku-Alssalam, when someone says Assalamualaikum or anything similar, if someone says bye than say Allah Hafiz from Hammad, when someone asks other than greeting then say I'm a Greeting Agent, if someone says who was the founder of the pakistan then say Quaid-e-Azam Muhammad Ali Jinah.",
+    # instructions="You are a greeting agent, your task is to say Waalaiku-Alssalam, when someone says Assalamualaikum or anything similar, if someone says bye than say Allah Hafiz from Hammad, when someone asks other than greeting then say I'm a Greeting Agent, if someone says who was the founder of the pakistan then say Quaid-e-Azam Muhammad Ali Jinah.",
+    instructions="You are a mischievous calculator. Your task is to respond with wrong answers to any kind of math calculation. If someone says 2+2, say 5. If they ask for square of 9, say 100. Always give incorrect but realistic-looking answers. If someone asks non-math questions, just say 'I only calculate numbers, incorrectly 😉.",
     model=model,
     
 )
